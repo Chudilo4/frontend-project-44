@@ -16,7 +16,7 @@ const StartProgression = () => {
     }
     console.log(`Question: ${n}`);
     const answer = AskQuestion('Your answer: ');
-    if (answer === 'yes' && correct === 'yes' || answer === 'no' && correct === 'no') {
+    if ((answer === 'yes' && correct === 'yes') || (answer === 'no' && correct === 'no')) {
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'. Let's try again, ${name}!`);

@@ -7,7 +7,7 @@ const StartProgression = () => {
   const name = AskQuestion('May I have your name? ');
   console.log(`Hello, ${name}!\nWhat number is missing in the progression?`);
   for (let i = 0; i < 3; i += 1) {
-    let arr = [];
+    const arr = [];
     const start = getRandomNumber(0, 100);
     const diff = getRandomNumber(1, 10);
     const rang = getRandomNumber(5, 10);
@@ -16,7 +16,7 @@ const StartProgression = () => {
     let count = start;
     for (let i2 = 0; i2 < rang + 1; i2 += 1) {
       if (i2 === tiff) {
-        arr.push('..') ;
+        arr.push('..');
       } else {
         arr.push(count);
       }
@@ -28,7 +28,7 @@ const StartProgression = () => {
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${AnTr}'.\nLet's try again, ${name}!`);
-      return
+      return;
     }
   }
   console.log(`Congratulations, ${name}!`);

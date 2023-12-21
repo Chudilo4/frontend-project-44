@@ -1,7 +1,10 @@
 #!/usr/bin/env node
-import nameRequest from '../src/cli.js';
+import AskQuestion from '../src/cli.js';
 
-const Welcome = 'Welcome to the Brain Games!';
+let Welcome = 'Welcome to the Brain Games!';
+let NameQuestion = 'May I have your name? ';
 
 console.log(Welcome);
-nameRequest();
+AskQuestion(NameQuestion);
+
+

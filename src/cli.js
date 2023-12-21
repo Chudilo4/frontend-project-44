@@ -1,9 +1,8 @@
 import readlineSync from 'readline-sync';
 
-const nameRequest = () => {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+const AskQuestion = (question) => {
+  const name = readlineSync.question(question);
   return name;
 };
 
-export default nameRequest;
+export default AskQuestion;

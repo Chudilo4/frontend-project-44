@@ -5,7 +5,7 @@ import getRandomNumber from '../src/random.js';
 const StartEven = () => {
   console.log('Welcome to the Brain Games!');
   const name = AskQuestion('May I have your name? ');
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(`Hello, ${name}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
   for (let i = 0; i < 3; i += 1) {
     const number = getRandomNumber(0, 100);
     let correctAnser = '';

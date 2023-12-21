@@ -5,4 +5,5 @@ const Welcome = 'Welcome to the Brain Games!';
 const NameQuestion = 'May I have your name? ';
 
 console.log(Welcome);
-AskQuestion(NameQuestion);
+const name = AskQuestion(NameQuestion);
+console.log(`Hello, ${name}!`)

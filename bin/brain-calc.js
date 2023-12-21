@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import AskQuestion from '../src/cli.js';
 import getRandomNumber from '../src/random.js';
 

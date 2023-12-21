@@ -3,16 +3,15 @@ import AskQuestion from '../src/cli.js';
 import getRandomNumber from '../src/random.js';
 
 const Gcd = (n1, n2) => {
-    const n3 = n1 % n2
-    if (n3 === 0) {
-        return n2
-    } 
-    const n4 = n2 % n3
-    if (n4 === 0) {
-        return n3
-    } else {
-        return Gcd(n3, n4)
-    }
+  const n3 = n1 % n2;
+  if (n3 === 0) {
+    return n2;
+  }
+  const n4 = n2 % n3;
+  if (n4 === 0) {
+    return n3;
+  }
+  return Gcd(n3, n4);
 };
 
 const StartGcd = () => {
